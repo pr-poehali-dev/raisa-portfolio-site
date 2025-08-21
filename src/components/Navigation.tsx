@@ -31,11 +31,11 @@ const Navigation = ({ scrollToSection }: NavigationProps) => {
       {/* Mobile Navigation */}
       <nav className="md:hidden fixed top-0 w-full z-50 bg-mystic-dark/90 backdrop-blur-sm border-b border-mystic-purple/20">
         {/* Avatar and Name */}
-        <div className="flex flex-col items-center py-3 border-b border-mystic-purple/10">
-          <div className="w-12 h-12 rounded-full bg-gradient-to-r from-mystic-purple to-mystic-accent mb-2 flex items-center justify-center">
+        <div className="flex items-center py-3 px-4 border-b border-mystic-purple/10">
+          <div className="w-12 h-12 rounded-full bg-gradient-to-r from-mystic-purple to-mystic-accent mr-3 flex items-center justify-center">
             <Icon name="Sparkles" size={20} className="text-white" />
           </div>
-          <div className="text-center">
+          <div>
             <div className="font-exo font-bold text-mystic-purple text-sm">Раиса Ильинская</div>
             <div className="font-exo text-xs text-gray-400">Ворожея</div>
           </div>

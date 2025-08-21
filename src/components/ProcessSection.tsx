@@ -18,7 +18,7 @@ const ProcessSection = () => {
             <Icon name="Clock" size={16} className="mr-2" />
             Как проходит работа
           </div>
-          <h2 className="font-cormorant text-4xl lg:text-5xl font-bold mb-4">
+          <h2 className="font-exo text-4xl lg:text-5xl font-bold mb-4">
             Процесс <span className="text-mystic-purple">работы</span>
           </h2>
           <p className="text-xl text-gray-300">Пошаговый алгоритм достижения результата</p>
@@ -40,7 +40,7 @@ const ProcessSection = () => {
                   {step.num}
                 </div>
                 <div>
-                  <h3 className="font-cormorant text-xl font-bold text-white mb-2">{step.title}</h3>
+                  <h3 className="font-exo text-xl font-bold text-white mb-2">{step.title}</h3>
                   <p className="text-gray-300">{step.desc}</p>
                 </div>
               </div>

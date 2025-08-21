@@ -22,7 +22,7 @@ const ServicesSection = () => {
             <Icon name="Sparkles" size={16} className="mr-2" />
             Полный спектр магических услуг
           </div>
-          <h2 className="font-cormorant text-4xl lg:text-5xl font-bold mb-4">
+          <h2 className="font-exo text-4xl lg:text-5xl font-bold mb-4">
             Мои <span className="text-mystic-purple">услуги</span>
           </h2>
           <p className="text-xl text-gray-300">Помогаю решить любые вопросы сердца и судьбы</p>
@@ -37,7 +37,7 @@ const ServicesSection = () => {
                     <Icon name={service.icon as any} size={24} className="text-mystic-purple" />
                   </div>
                   <div>
-                    <h3 className="font-cormorant text-lg font-bold text-white">{service.title}</h3>
+                    <h3 className="font-exo text-lg font-bold text-white">{service.title}</h3>
                     <div className="text-mystic-purple font-semibold text-sm">{service.price}</div>
                   </div>
                 </div>

@@ -11,7 +11,7 @@ const AboutSection = () => {
             <Icon name="User" size={16} className="mr-2" />
             Познакомьтесь со мной ближе
           </div>
-          <h2 className="font-cormorant text-4xl lg:text-5xl font-bold mb-4">
+          <h2 className="font-exo text-4xl lg:text-5xl font-bold mb-4">
             Обо <span className="text-mystic-purple">мне</span>
           </h2>
           <p className="text-xl text-gray-300 max-w-2xl mx-auto">
@@ -22,21 +22,21 @@ const AboutSection = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
           <div className="space-y-6">
             <div className="bg-mystic-dark/60 p-6 rounded-xl border border-mystic-purple/20">
-              <h3 className="font-cormorant text-2xl font-bold mb-3 text-mystic-purple">Наследие предков</h3>
+              <h3 className="font-exo text-2xl font-bold mb-3 text-mystic-purple">Наследие предков</h3>
               <p className="text-gray-300">
                 Родилась в семье потомственных знахарок. Знания передавались из поколения в поколение уже более 200 лет. 
                 С детства изучала травничество, обрядовую магию и древние практики.
               </p>
             </div>
             <div className="bg-mystic-dark/60 p-6 rounded-xl border border-mystic-purple/20">
-              <h3 className="font-cormorant text-2xl font-bold mb-3 text-mystic-purple">Образование и практика</h3>
+              <h3 className="font-exo text-2xl font-bold mb-3 text-mystic-purple">Образование и практика</h3>
               <p className="text-gray-300">
                 Окончила курсы парапсихологии, изучала Таро у мастеров в Праге, практиковала рунические практики в Скандинавии.
                 Постоянно совершенствую знания и изучаю новые методики.
               </p>
             </div>
             <div className="bg-mystic-dark/60 p-6 rounded-xl border border-mystic-purple/20">
-              <h3 className="font-cormorant text-2xl font-bold mb-3 text-mystic-purple">Философия работы</h3>
+              <h3 className="font-exo text-2xl font-bold mb-3 text-mystic-purple">Философия работы</h3>
               <p className="text-gray-300">
                 Работаю только с позитивными энергиями. Верю, что истинная любовь должна приносить радость обеим сторонам.
                 Никогда не делаю того, что может навредить людям.
@@ -59,7 +59,7 @@ const AboutSection = () => {
               <div className="w-16 h-16 bg-mystic-purple/20 rounded-full flex items-center justify-center mx-auto mb-6">
                 <Icon name="Heart" size={32} className="text-mystic-purple" />
               </div>
-              <h3 className="font-cormorant text-2xl font-bold mb-4 text-white">Привороты</h3>
+              <h3 className="font-exo text-2xl font-bold mb-4 text-white">Привороты</h3>
               <p className="text-gray-300 leading-relaxed mb-4">
                 Профессиональные обряды привлечения любви. Работаю только с чистыми намерениями для обоюдного счастья.
               </p>
@@ -72,7 +72,7 @@ const AboutSection = () => {
               <div className="w-16 h-16 bg-mystic-purple/20 rounded-full flex items-center justify-center mx-auto mb-6">
                 <Icon name="Eye" size={32} className="text-mystic-purple" />
               </div>
-              <h3 className="font-cormorant text-2xl font-bold mb-4 text-white">Гадания</h3>
+              <h3 className="font-exo text-2xl font-bold mb-4 text-white">Гадания</h3>
               <p className="text-gray-300 leading-relaxed mb-4">
                 Предсказания судьбы на картах Таро, рунах и кристальном шаре. Узнайте свое будущее в любви.
               </p>
@@ -85,7 +85,7 @@ const AboutSection = () => {
               <div className="w-16 h-16 bg-mystic-purple/20 rounded-full flex items-center justify-center mx-auto mb-6">
                 <Icon name="Shield" size={32} className="text-mystic-purple" />
               </div>
-              <h3 className="font-cormorant text-2xl font-bold mb-4 text-white">Защита</h3>
+              <h3 className="font-exo text-2xl font-bold mb-4 text-white">Защита</h3>
               <p className="text-gray-300 leading-relaxed mb-4">
                 Снятие негатива, порчи и сглаза. Создание защитных амулетов для сохранения любви и семейного очага.
               </p>

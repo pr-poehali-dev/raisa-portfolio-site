@@ -12,7 +12,7 @@ const HeroSection = () => {
               <Icon name="Star" size={16} className="mr-2" />
               Потомственная ворожея в 7-м поколении
             </div>
-            <h1 className="font-cormorant text-5xl lg:text-7xl font-bold leading-tight">
+            <h1 className="font-exo text-5xl lg:text-7xl font-bold leading-tight">
               Ворожея 
               <span className="text-mystic-purple block">Раиса Ильинская</span>
             </h1>
@@ -33,19 +33,19 @@ const HeroSection = () => {
             </div>
             <div className="flex items-center space-x-8 pt-6">
               <div className="text-center">
-                <div className="text-3xl font-bold text-mystic-purple font-cormorant">15+</div>
+                <div className="text-3xl font-bold text-mystic-purple font-exo">15+</div>
                 <div className="text-sm text-gray-400">лет опыта</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-mystic-purple font-cormorant">500+</div>
+                <div className="text-3xl font-bold text-mystic-purple font-exo">500+</div>
                 <div className="text-sm text-gray-400">счастливых пар</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-mystic-purple font-cormorant">24/7</div>
+                <div className="text-3xl font-bold text-mystic-purple font-exo">24/7</div>
                 <div className="text-sm text-gray-400">поддержка</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-mystic-purple font-cormorant">98%</div>
+                <div className="text-3xl font-bold text-mystic-purple font-exo">98%</div>
                 <div className="text-sm text-gray-400">результат</div>
               </div>
             </div>

@@ -55,7 +55,7 @@ const ReviewsSection = () => {
             <Icon name="MessageSquare" size={16} className="mr-2" />
             Истории успеха
           </div>
-          <h2 className="font-cormorant text-4xl lg:text-5xl font-bold mb-4">
+          <h2 className="font-exo text-4xl lg:text-5xl font-bold mb-4">
             Отзывы <span className="text-mystic-purple">клиентов</span>
           </h2>
           <p className="text-xl text-gray-300">Истории тех, кто обрел счастье</p>

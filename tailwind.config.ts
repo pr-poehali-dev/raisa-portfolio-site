@@ -70,8 +70,8 @@ export default {
 				}
 			},
 			fontFamily: {
-				'cormorant': ['Cormorant', 'serif'],
-				'sans': ['Open Sans', 'system-ui', 'sans-serif']
+				'exo': ['Exo 2', 'sans-serif'],
+				'sans': ['Exo 2', 'system-ui', 'sans-serif']
 			},
 			borderRadius: {
 				lg: 'var(--radius)',

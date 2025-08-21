@@ -11,7 +11,7 @@ const ContactsSection = () => {
             <Icon name="Phone" size={16} className="mr-2" />
             Свяжитесь со мной
           </div>
-          <h2 className="font-cormorant text-4xl lg:text-5xl font-bold mb-4">
+          <h2 className="font-exo text-4xl lg:text-5xl font-bold mb-4">
             <span className="text-mystic-purple">Контакты</span>
           </h2>
           <p className="text-xl text-gray-300">Свяжитесь со мной для консультации</p>
@@ -65,7 +65,7 @@ const ContactsSection = () => {
               </div>
 
               <div className="p-6 bg-mystic-purple/10 rounded-xl border border-mystic-purple/30">
-                <h3 className="font-cormorant text-xl font-bold text-mystic-purple mb-3">Важная информация</h3>
+                <h3 className="font-exo text-xl font-bold text-mystic-purple mb-3">Важная информация</h3>
                 <ul className="space-y-2 text-gray-300 text-sm">
                   <li>• Первая консультация — бесплатно (15 минут)</li>
                   <li>• Конфиденциальность гарантирована</li>
@@ -77,7 +77,7 @@ const ContactsSection = () => {
             
             <Card className="bg-mystic-dark/80 border-mystic-purple/20">
               <CardContent className="p-8">
-                <h3 className="font-cormorant text-2xl font-bold mb-6 text-white text-center">
+                <h3 className="font-exo text-2xl font-bold mb-6 text-white text-center">
                   Записаться на консультацию
                 </h3>
                 <div className="space-y-4">

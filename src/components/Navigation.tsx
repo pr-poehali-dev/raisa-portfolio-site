@@ -30,55 +30,46 @@ const Navigation = ({ scrollToSection }: NavigationProps) => {
 
       {/* Mobile Navigation */}
       <nav className="md:hidden fixed top-0 w-full z-50 bg-mystic-dark/90 backdrop-blur-sm border-b border-mystic-purple/20">
-        <div className="flex justify-between items-center px-2 py-3 overflow-x-auto">
-          <button 
-            onClick={() => scrollToSection('home')} 
-            className="flex flex-col items-center min-w-fit px-2 py-1 hover:text-mystic-purple transition-colors"
-          >
-            <Icon name="Home" size={18} />
-            <span className="text-xs mt-1">Главная</span>
-          </button>
+        {/* Avatar and Name */}
+        <div className="flex flex-col items-center py-3 border-b border-mystic-purple/10">
+          <div className="w-12 h-12 rounded-full bg-gradient-to-r from-mystic-purple to-mystic-accent mb-2 flex items-center justify-center">
+            <Icon name="Sparkles" size={20} className="text-white" />
+          </div>
+          <div className="text-center">
+            <div className="font-exo font-bold text-mystic-purple text-sm">Раиса Ильинская</div>
+            <div className="font-exo text-xs text-gray-400">Ворожея</div>
+          </div>
+        </div>
+        
+        {/* Navigation Icons */}
+        <div className="flex justify-around items-center px-4 py-3">
           <button 
             onClick={() => scrollToSection('about')} 
-            className="flex flex-col items-center min-w-fit px-2 py-1 hover:text-mystic-purple transition-colors"
+            className="flex flex-col items-center min-w-fit px-3 py-2 hover:text-mystic-purple transition-colors"
           >
-            <Icon name="User" size={18} />
-            <span className="text-xs mt-1">Обо мне</span>
+            <Icon name="User" size={20} />
+            <span className="text-xs mt-1">Кто я</span>
           </button>
           <button 
             onClick={() => scrollToSection('services')} 
-            className="flex flex-col items-center min-w-fit px-2 py-1 hover:text-mystic-purple transition-colors"
+            className="flex flex-col items-center min-w-fit px-3 py-2 hover:text-mystic-purple transition-colors"
           >
-            <Icon name="Sparkles" size={18} />
-            <span className="text-xs mt-1">Услуги</span>
-          </button>
-          <button 
-            onClick={() => scrollToSection('process')} 
-            className="flex flex-col items-center min-w-fit px-2 py-1 hover:text-mystic-purple transition-colors"
-          >
-            <Icon name="Clock" size={18} />
-            <span className="text-xs mt-1">Процесс</span>
+            <Icon name="Sparkles" size={20} />
+            <span className="text-xs mt-1">Обряды</span>
           </button>
           <button 
             onClick={() => scrollToSection('reviews')} 
-            className="flex flex-col items-center min-w-fit px-2 py-1 hover:text-mystic-purple transition-colors"
+            className="flex flex-col items-center min-w-fit px-3 py-2 hover:text-mystic-purple transition-colors"
           >
-            <Icon name="Heart" size={18} />
+            <Icon name="Heart" size={20} />
             <span className="text-xs mt-1">Отзывы</span>
           </button>
           <button 
-            onClick={() => scrollToSection('faq')} 
-            className="flex flex-col items-center min-w-fit px-2 py-1 hover:text-mystic-purple transition-colors"
-          >
-            <Icon name="HelpCircle" size={18} />
-            <span className="text-xs mt-1">FAQ</span>
-          </button>
-          <button 
             onClick={() => scrollToSection('contacts')} 
-            className="flex flex-col items-center min-w-fit px-2 py-1 hover:text-mystic-purple transition-colors"
+            className="flex flex-col items-center min-w-fit px-3 py-2 hover:text-mystic-purple transition-colors"
           >
-            <Icon name="MessageCircle" size={18} />
-            <span className="text-xs mt-1">Контакты</span>
+            <Icon name="MessageCircle" size={20} />
+            <span className="text-xs mt-1">Связь</span>
           </button>
         </div>
       </nav>

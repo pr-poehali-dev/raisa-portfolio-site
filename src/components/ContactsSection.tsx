@@ -1,107 +1,110 @@
 import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
 import Icon from "@/components/ui/icon";
 
 const ContactsSection = () => {
   return (
-    <section id="contacts" className="py-20">
-      <div className="container mx-auto px-6">
+    <section id="contacts" className="py-24 bg-mystic-dark">
+      <div className="container mx-auto px-8 max-w-6xl">
         <div className="text-center mb-16">
-          <div className="inline-flex items-center px-4 py-2 bg-mystic-purple/10 rounded-full text-sm text-mystic-purple mb-4">
-            <Icon name="Phone" size={16} className="mr-2" />
-            Свяжитесь со мной
-          </div>
-          <h2 className="font-exo text-4xl lg:text-5xl font-bold mb-4">
-            <span className="text-mystic-purple">Контакты</span>
+          <h2 className="font-exo text-3xl md:text-4xl font-light text-mystic-white mb-6">
+            Контакты
           </h2>
-          <p className="text-xl text-gray-300">Свяжитесь со мной для консультации</p>
+          <div className="w-12 h-px bg-mystic-gold mx-auto mb-6"></div>
+          <p className="text-gray-400 max-w-2xl mx-auto font-light">
+            Свяжитесь со мной удобным способом. Отвечаю в течение часа.
+          </p>
         </div>
-        
-        <div className="max-w-4xl mx-auto">
-          <div className="grid lg:grid-cols-2 gap-12">
-            <div className="space-y-8">
-              <div className="flex items-center space-x-4 p-4 bg-mystic-dark/40 rounded-xl border border-mystic-purple/20">
-                <div className="w-12 h-12 bg-mystic-purple/20 rounded-full flex items-center justify-center">
-                  <Icon name="Phone" size={24} className="text-mystic-purple" />
+
+        <div className="grid md:grid-cols-2 gap-16">
+          <div className="space-y-8">
+            <h3 className="font-exo text-xl font-medium text-mystic-white mb-6">
+              Способы связи
+            </h3>
+            
+            <div className="space-y-6">
+              <div className="flex items-center space-x-4">
+                <div className="w-12 h-12 rounded-lg bg-mystic-gold/10 flex items-center justify-center">
+                  <Icon name="Phone" size={20} className="text-mystic-gold" />
                 </div>
                 <div>
-                  <div className="font-semibold text-white">Телефон</div>
-                  <div className="text-gray-300 text-lg">+7 (999) 123-45-67</div>
-                  <div className="text-gray-400 text-sm">Звонки и SMS</div>
-                </div>
-              </div>
-              
-              <div className="flex items-center space-x-4 p-4 bg-mystic-dark/40 rounded-xl border border-mystic-purple/20">
-                <div className="w-12 h-12 bg-mystic-purple/20 rounded-full flex items-center justify-center">
-                  <Icon name="MessageCircle" size={24} className="text-mystic-purple" />
-                </div>
-                <div>
-                  <div className="font-semibold text-white">Telegram</div>
-                  <div className="text-gray-300 text-lg">@raisa_vorozhea</div>
-                  <div className="text-gray-400 text-sm">Быстрые ответы 24/7</div>
-                </div>
-              </div>
-              
-              <div className="flex items-center space-x-4 p-4 bg-mystic-dark/40 rounded-xl border border-mystic-purple/20">
-                <div className="w-12 h-12 bg-mystic-purple/20 rounded-full flex items-center justify-center">
-                  <Icon name="Mail" size={24} className="text-mystic-purple" />
-                </div>
-                <div>
-                  <div className="font-semibold text-white">Email</div>
-                  <div className="text-gray-300 text-lg">raisa@example.com</div>
-                  <div className="text-gray-400 text-sm">Подробные консультации</div>
-                </div>
-              </div>
-              
-              <div className="flex items-center space-x-4 p-4 bg-mystic-dark/40 rounded-xl border border-mystic-purple/20">
-                <div className="w-12 h-12 bg-mystic-purple/20 rounded-full flex items-center justify-center">
-                  <Icon name="Clock" size={24} className="text-mystic-purple" />
-                </div>
-                <div>
-                  <div className="font-semibold text-white">Часы работы</div>
-                  <div className="text-gray-300 text-lg">Ежедневно с 10:00 до 22:00</div>
-                  <div className="text-gray-400 text-sm">Экстренные случаи - круглосуточно</div>
+                  <div className="text-mystic-white font-medium">Телефон</div>
+                  <div className="text-gray-400 text-sm">+7 (999) 123-45-67</div>
                 </div>
               </div>
 
-              <div className="p-6 bg-mystic-purple/10 rounded-xl border border-mystic-purple/30">
-                <h3 className="font-exo text-xl font-bold text-mystic-purple mb-3">Важная информация</h3>
-                <ul className="space-y-2 text-gray-300 text-sm">
-                  <li>• Первая консультация — бесплатно (15 минут)</li>
-                  <li>• Конфиденциальность гарантирована</li>
-                  <li>• Работаю только после 18 лет</li>
-                  <li>• Оплата после получения результата</li>
-                </ul>
+              <div className="flex items-center space-x-4">
+                <div className="w-12 h-12 rounded-lg bg-mystic-gold/10 flex items-center justify-center">
+                  <Icon name="MessageCircle" size={20} className="text-mystic-gold" />
+                </div>
+                <div>
+                  <div className="text-mystic-white font-medium">Telegram</div>
+                  <div className="text-gray-400 text-sm">@raisa_vorozhea</div>
+                </div>
+              </div>
+
+              <div className="flex items-center space-x-4">
+                <div className="w-12 h-12 rounded-lg bg-mystic-gold/10 flex items-center justify-center">
+                  <Icon name="Mail" size={20} className="text-mystic-gold" />
+                </div>
+                <div>
+                  <div className="text-mystic-white font-medium">Email</div>
+                  <div className="text-gray-400 text-sm">raisa@example.com</div>
+                </div>
+              </div>
+
+              <div className="flex items-center space-x-4">
+                <div className="w-12 h-12 rounded-lg bg-mystic-gold/10 flex items-center justify-center">
+                  <Icon name="Clock" size={20} className="text-mystic-gold" />
+                </div>
+                <div>
+                  <div className="text-mystic-white font-medium">Режим работы</div>
+                  <div className="text-gray-400 text-sm">Ежедневно с 10:00 до 22:00</div>
+                </div>
               </div>
             </div>
+
+            <div className="pt-8 border-t border-mystic-gray/20">
+              <h4 className="text-mystic-gold font-medium mb-4">Важная информация</h4>
+              <ul className="space-y-2 text-sm text-gray-400">
+                <li>• Первая консультация 30 минут — бесплатно</li>
+                <li>• Полная конфиденциальность гарантирована</li>
+                <li>• Работаю только с совершеннолетними</li>
+                <li>• Оплата после получения результата</li>
+              </ul>
+            </div>
+          </div>
+
+          <div className="space-y-6">
+            <h3 className="font-exo text-xl font-medium text-mystic-white mb-6">
+              Записаться на консультацию
+            </h3>
             
-            <Card className="bg-mystic-dark/80 border-mystic-purple/20">
-              <CardContent className="p-8">
-                <h3 className="font-exo text-2xl font-bold mb-6 text-white text-center">
-                  Записаться на консультацию
-                </h3>
-                <div className="space-y-4">
-                  <Button className="w-full bg-mystic-purple hover:bg-mystic-accent text-white py-4 text-lg rounded-full shadow-lg transition-all hover:scale-105">
-                    <Icon name="Phone" size={20} className="mr-2" />
-                    Позвонить сейчас
-                  </Button>
-                  <Button variant="outline" className="w-full border-mystic-purple text-mystic-purple hover:bg-mystic-purple hover:text-white py-4 text-lg rounded-full transition-all hover:scale-105">
-                    <Icon name="MessageCircle" size={20} className="mr-2" />
-                    Написать в Telegram
-                  </Button>
-                  <Button variant="outline" className="w-full border-mystic-accent text-mystic-accent hover:bg-mystic-accent hover:text-white py-4 text-lg rounded-full transition-all hover:scale-105">
-                    <Icon name="Mail" size={20} className="mr-2" />
-                    Отправить Email
-                  </Button>
-                </div>
-                <div className="mt-8 p-4 bg-mystic-purple/5 rounded-lg border border-mystic-purple/20">
-                  <div className="text-center text-mystic-purple font-bold mb-2">🎁 Специальное предложение</div>
-                  <div className="text-center text-sm text-gray-400">
-                    При заказе любого ритуала до конца месяца — защитный амулет в подарок!
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
+            <form className="space-y-6">
+              <Input 
+                placeholder="Ваше имя" 
+                className="bg-mystic-gray/20 border-mystic-gray/30 text-mystic-white placeholder:text-gray-500 focus:border-mystic-gold"
+              />
+              <Input 
+                placeholder="Телефон или Telegram" 
+                className="bg-mystic-gray/20 border-mystic-gray/30 text-mystic-white placeholder:text-gray-500 focus:border-mystic-gold"
+              />
+              <Textarea 
+                placeholder="Опишите вашу ситуацию (необязательно)" 
+                rows={4}
+                className="bg-mystic-gray/20 border-mystic-gray/30 text-mystic-white placeholder:text-gray-500 focus:border-mystic-gold resize-none"
+              />
+              
+              <Button className="w-full bg-mystic-gold hover:bg-mystic-accent text-mystic-black py-3 font-medium transition-all duration-300">
+                <Icon name="Send" size={18} className="mr-2" />
+                Отправить заявку
+              </Button>
+            </form>
+
+            <p className="text-xs text-gray-500 text-center">
+              Нажимая кнопку, вы соглашаетесь с обработкой персональных данных
+            </p>
           </div>
         </div>
       </div>

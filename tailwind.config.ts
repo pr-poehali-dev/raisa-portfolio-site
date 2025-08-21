@@ -33,10 +33,13 @@ export default {
 					foreground: '#F9FAFB'
 				},
 				mystic: {
-					purple: '#8B5CF6',
-					dark: '#1F2937',
-					light: '#F3F4F6',
-					accent: '#D946EF'
+					black: '#0A0A0B',
+					dark: '#1A1A1B', 
+					gray: '#2A2A2B',
+					light: '#F8F8F9',
+					white: '#FFFFFF',
+					gold: '#D4AF37',
+					accent: '#B8860B'
 				},
 				destructive: {
 					DEFAULT: 'hsl(var(--destructive))',

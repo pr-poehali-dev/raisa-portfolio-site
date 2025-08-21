@@ -1,28 +1,30 @@
 const Footer = () => {
   return (
-    <footer className="py-12 border-t border-mystic-purple/20 bg-mystic-dark/80">
-      <div className="container mx-auto px-6">
-        <div className="grid md:grid-cols-3 gap-8 mb-8">
-          <div>
-            <div className="font-exo text-2xl font-bold text-mystic-purple mb-4">
+    <footer className="py-16 border-t border-mystic-gray/20 bg-mystic-black">
+      <div className="container mx-auto px-8 max-w-6xl">
+        <div className="grid md:grid-cols-3 gap-12 mb-12">
+          <div className="space-y-4">
+            <div className="font-exo text-xl font-light text-mystic-white">
               Раиса Ильинская
             </div>
-            <p className="text-gray-400 text-sm">
+            <p className="text-gray-400 text-sm font-light leading-relaxed">
               Потомственная ворожея в 7-м поколении. Помогаю обрести любовь и семейное счастье уже более 15 лет.
             </p>
           </div>
-          <div>
-            <h4 className="text-white font-semibold mb-4">Услуги</h4>
-            <ul className="space-y-2 text-gray-400 text-sm">
-              <li>Привороты и любовная магия</li>
-              <li>Гадания и предсказания</li>
-              <li>Снятие порчи и сглаза</li>
+          
+          <div className="space-y-4">
+            <h4 className="text-mystic-white font-medium">Услуги</h4>
+            <ul className="space-y-2 text-sm text-gray-400">
+              <li>Привлечение суженого</li>
+              <li>Возвращение в семью</li>
               <li>Защитные ритуалы</li>
+              <li>Укрепление брака</li>
             </ul>
           </div>
-          <div>
-            <h4 className="text-white font-semibold mb-4">Контакты</h4>
-            <div className="space-y-2 text-gray-400 text-sm">
+          
+          <div className="space-y-4">
+            <h4 className="text-mystic-white font-medium">Контакты</h4>
+            <div className="space-y-2 text-sm text-gray-400">
               <div>+7 (999) 123-45-67</div>
               <div>@raisa_vorozhea</div>
               <div>raisa@example.com</div>
@@ -30,12 +32,15 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="text-center pt-8 border-t border-mystic-purple/10">
-          <div className="text-gray-400 text-sm">
-            &copy; 2024 Раиса Ильинская. Все права защищены.
-          </div>
-          <div className="text-gray-500 text-xs mt-2">
-            Помогаю обрести любовь и семейное счастье • Работаю только с позитивными энергиями
+        
+        <div className="pt-8 border-t border-mystic-gray/10">
+          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
+            <div className="text-gray-500 text-sm">
+              © 2024 Раиса Ильинская. Все права защищены.
+            </div>
+            <div className="text-gray-600 text-xs">
+              Помогаю обрести любовь и семейное счастье • Работаю только с позитивными энергиями
+            </div>
           </div>
         </div>
       </div>

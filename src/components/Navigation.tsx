@@ -8,68 +8,67 @@ const Navigation = ({ scrollToSection }: NavigationProps) => {
   return (
     <>
       {/* Desktop Navigation */}
-      <nav className="hidden md:block fixed top-0 w-full z-50 bg-mystic-dark/80 backdrop-blur-sm border-b border-mystic-purple/20">
-        <div className="container mx-auto px-6 py-4">
+      <nav className="hidden md:block fixed top-0 w-full z-50 bg-mystic-black/95 backdrop-blur-sm border-b border-mystic-gray/10">
+        <div className="container mx-auto px-8 py-6">
           <div className="flex items-center justify-between">
-            <div className="font-exo text-2xl font-bold text-mystic-purple flex items-center">
-              <Icon name="Sparkles" size={24} className="mr-2" />
+            <div className="font-exo text-xl font-light text-mystic-white">
               Раиса Ильинская
             </div>
             <div className="flex space-x-8">
-              <button onClick={() => scrollToSection('home')} className="hover:text-mystic-purple transition-colors">Главная</button>
-              <button onClick={() => scrollToSection('about')} className="hover:text-mystic-purple transition-colors">Обо мне</button>
-              <button onClick={() => scrollToSection('services')} className="hover:text-mystic-purple transition-colors">Услуги</button>
-              <button onClick={() => scrollToSection('process')} className="hover:text-mystic-purple transition-colors">Как проходит</button>
-              <button onClick={() => scrollToSection('reviews')} className="hover:text-mystic-purple transition-colors">Отзывы</button>
-              <button onClick={() => scrollToSection('faq')} className="hover:text-mystic-purple transition-colors">FAQ</button>
-              <button onClick={() => scrollToSection('contacts')} className="hover:text-mystic-purple transition-colors">Контакты</button>
+              <button onClick={() => scrollToSection('home')} className="text-sm text-gray-400 hover:text-mystic-gold transition-colors font-light">Главная</button>
+              <button onClick={() => scrollToSection('about')} className="text-sm text-gray-400 hover:text-mystic-gold transition-colors font-light">Обо мне</button>
+              <button onClick={() => scrollToSection('services')} className="text-sm text-gray-400 hover:text-mystic-gold transition-colors font-light">Услуги</button>
+              <button onClick={() => scrollToSection('process')} className="text-sm text-gray-400 hover:text-mystic-gold transition-colors font-light">Процесс</button>
+              <button onClick={() => scrollToSection('reviews')} className="text-sm text-gray-400 hover:text-mystic-gold transition-colors font-light">Отзывы</button>
+              <button onClick={() => scrollToSection('faq')} className="text-sm text-gray-400 hover:text-mystic-gold transition-colors font-light">FAQ</button>
+              <button onClick={() => scrollToSection('contacts')} className="text-sm text-gray-400 hover:text-mystic-gold transition-colors font-light">Контакты</button>
             </div>
           </div>
         </div>
       </nav>
 
       {/* Mobile Navigation */}
-      <nav className="md:hidden fixed top-0 w-full z-50 bg-mystic-dark/90 backdrop-blur-sm border-b border-mystic-purple/20">
+      <nav className="md:hidden fixed top-0 w-full z-50 bg-mystic-black/95 backdrop-blur-sm border-b border-mystic-gray/10">
         {/* Avatar and Name */}
-        <div className="flex items-center py-3 px-4 border-b border-mystic-purple/10">
-          <div className="w-12 h-12 rounded-full bg-gradient-to-r from-mystic-purple to-mystic-accent mr-3 flex items-center justify-center">
-            <Icon name="Sparkles" size={20} className="text-white" />
+        <div className="flex items-center py-4 px-6 border-b border-mystic-gray/10">
+          <div className="w-10 h-10 rounded-full bg-mystic-gold/20 mr-3 flex items-center justify-center border border-mystic-gold/30">
+            <Icon name="Star" size={16} className="text-mystic-gold" />
           </div>
           <div>
-            <div className="font-exo font-bold text-mystic-purple text-sm">Раиса Ильинская</div>
-            <div className="font-exo text-xs text-gray-400">Ворожея</div>
+            <div className="font-exo font-light text-mystic-white text-sm">Раиса Ильинская</div>
+            <div className="font-exo text-xs text-gray-500">Ворожея</div>
           </div>
         </div>
         
         {/* Navigation Icons */}
-        <div className="flex justify-around items-center px-4 py-3">
+        <div className="flex justify-around items-center px-4 py-4">
           <button 
             onClick={() => scrollToSection('about')} 
-            className="flex flex-col items-center min-w-fit px-3 py-2 hover:text-mystic-purple transition-colors"
+            className="flex flex-col items-center min-w-fit px-3 py-2 hover:text-mystic-gold transition-colors"
           >
-            <Icon name="User" size={20} />
-            <span className="text-xs mt-1">Кто я</span>
+            <Icon name="User" size={18} className="text-gray-400" />
+            <span className="text-xs mt-1 text-gray-400 font-light">Кто я</span>
           </button>
           <button 
             onClick={() => scrollToSection('services')} 
-            className="flex flex-col items-center min-w-fit px-3 py-2 hover:text-mystic-purple transition-colors"
+            className="flex flex-col items-center min-w-fit px-3 py-2 hover:text-mystic-gold transition-colors"
           >
-            <Icon name="Sparkles" size={20} />
-            <span className="text-xs mt-1">Обряды</span>
+            <Icon name="Star" size={18} className="text-gray-400" />
+            <span className="text-xs mt-1 text-gray-400 font-light">Обряды</span>
           </button>
           <button 
             onClick={() => scrollToSection('reviews')} 
-            className="flex flex-col items-center min-w-fit px-3 py-2 hover:text-mystic-purple transition-colors"
+            className="flex flex-col items-center min-w-fit px-3 py-2 hover:text-mystic-gold transition-colors"
           >
-            <Icon name="Heart" size={20} />
-            <span className="text-xs mt-1">Отзывы</span>
+            <Icon name="Heart" size={18} className="text-gray-400" />
+            <span className="text-xs mt-1 text-gray-400 font-light">Отзывы</span>
           </button>
           <button 
             onClick={() => scrollToSection('contacts')} 
-            className="flex flex-col items-center min-w-fit px-3 py-2 hover:text-mystic-purple transition-colors"
+            className="flex flex-col items-center min-w-fit px-3 py-2 hover:text-mystic-gold transition-colors"
           >
-            <Icon name="MessageCircle" size={20} />
-            <span className="text-xs mt-1">Связь</span>
+            <Icon name="MessageCircle" size={18} className="text-gray-400" />
+            <span className="text-xs mt-1 text-gray-400 font-light">Связь</span>
           </button>
         </div>
       </nav>

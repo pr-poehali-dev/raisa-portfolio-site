@@ -1,50 +1,105 @@
-import { Card, CardContent } from "@/components/ui/card";
 import Icon from "@/components/ui/icon";
 
 const ServicesSection = () => {
   const services = [
-    { icon: "Heart", title: "Приворот на любовь", desc: "Привлечение конкретного человека", price: "от 5000 ₽" },
-    { icon: "Users", title: "Приворот на верность", desc: "Укрепление существующих отношений", price: "от 4000 ₽" },
-    { icon: "Home", title: "Приворот на возврат", desc: "Возвращение ушедшего партнера", price: "от 6000 ₽" },
-    { icon: "Ring", title: "Приворот на брак", desc: "Склонение к предложению руки и сердца", price: "от 7000 ₽" },
-    { icon: "Eye", title: "Диагностика отношений", desc: "Определение проблем в паре", price: "от 1500 ₽" },
-    { icon: "Shield", title: "Снятие соперницы", desc: "Устранение любовниц и разлучниц", price: "от 4500 ₽" },
-    { icon: "Sparkles", title: "Чистка ауры", desc: "Очищение от негатива и порчи", price: "от 3000 ₽" },
-    { icon: "Star", title: "Защитные амулеты", desc: "Создание оберегов для любви", price: "от 2000 ₽" },
-    { icon: "Moon", title: "Ритуалы по лунным фазам", desc: "Работа с энергией Луны", price: "от 3500 ₽" }
+    {
+      icon: "Heart",
+      title: "Привлечение суженого",
+      description: "Создание энергетического канала для встречи с истинной любовью",
+      price: "от 15 000 ₽"
+    },
+    {
+      icon: "Users",
+      title: "Возвращение в семью", 
+      description: "Восстановление утраченной связи и гармонии в отношениях",
+      price: "от 20 000 ₽"
+    },
+    {
+      icon: "Shield",
+      title: "Защитные ритуалы",
+      description: "Оберег от негативного воздействия и сохранение союза",
+      price: "от 10 000 ₽"
+    },
+    {
+      icon: "Star",
+      title: "Укрепление брака",
+      description: "Усиление взаимной любви и преданности между супругами",
+      price: "от 12 000 ₽"
+    },
+    {
+      icon: "Eye",
+      title: "Диагностика отношений",
+      description: "Глубокий анализ энергетических связей и блоков",
+      price: "от 5 000 ₽"
+    },
+    {
+      icon: "Flame",
+      title: "Усиление страсти",
+      description: "Пробуждение угасших чувств и возвращение романтики",
+      price: "от 8 000 ₽"
+    }
   ];
 
   return (
-    <section id="services" className="py-20">
-      <div className="container mx-auto px-6">
+    <section id="services" className="py-24 bg-mystic-black">
+      <div className="container mx-auto px-8 max-w-6xl">
         <div className="text-center mb-16">
-          <div className="inline-flex items-center px-4 py-2 bg-mystic-purple/10 rounded-full text-sm text-mystic-purple mb-4">
-            <Icon name="Sparkles" size={16} className="mr-2" />
-            Полный спектр магических услуг
-          </div>
-          <h2 className="font-exo text-4xl lg:text-5xl font-bold mb-4">
-            Мои <span className="text-mystic-purple">услуги</span>
+          <h2 className="font-exo text-3xl md:text-4xl font-light text-mystic-white mb-6">
+            Услуги
           </h2>
-          <p className="text-xl text-gray-300">Помогаю решить любые вопросы сердца и судьбы</p>
+          <div className="w-12 h-px bg-mystic-gold mx-auto mb-6"></div>
+          <p className="text-gray-400 max-w-2xl mx-auto font-light">
+            Индивидуальный подход к каждой ситуации с использованием проверенных временем практик
+          </p>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
-            <Card key={index} className="bg-mystic-dark/60 border-mystic-purple/30 hover:bg-mystic-dark/80 transition-all hover:scale-105">
-              <CardContent className="p-6">
-                <div className="flex items-center mb-4">
-                  <div className="w-12 h-12 bg-mystic-purple/20 rounded-full flex items-center justify-center mr-4">
-                    <Icon name={service.icon as any} size={24} className="text-mystic-purple" />
-                  </div>
-                  <div>
-                    <h3 className="font-exo text-lg font-bold text-white">{service.title}</h3>
-                    <div className="text-mystic-purple font-semibold text-sm">{service.price}</div>
-                  </div>
+            <div
+              key={index}
+              className="group border border-mystic-gray/20 rounded-lg p-8 hover:border-mystic-gold/30 transition-all duration-300 bg-mystic-dark/50"
+            >
+              <div className="mb-6">
+                <div className="w-12 h-12 rounded-lg bg-mystic-gold/10 flex items-center justify-center mb-4 group-hover:bg-mystic-gold/20 transition-colors">
+                  <Icon name={service.icon as any} size={24} className="text-mystic-gold" />
                 </div>
-                <p className="text-gray-300 text-sm">{service.desc}</p>
-              </CardContent>
-            </Card>
+                <h3 className="font-exo text-lg font-medium text-mystic-white mb-3">
+                  {service.title}
+                </h3>
+                <p className="text-gray-400 text-sm leading-relaxed font-light">
+                  {service.description}
+                </p>
+              </div>
+              
+              <div className="pt-4 border-t border-mystic-gray/10">
+                <div className="flex items-center justify-between">
+                  <span className="text-mystic-gold font-medium">{service.price}</span>
+                  <Icon name="ArrowRight" size={16} className="text-gray-500 group-hover:text-mystic-gold transition-colors" />
+                </div>
+              </div>
+            </div>
           ))}
+        </div>
+
+        <div className="text-center mt-16 p-8 border border-mystic-gray/20 rounded-lg bg-mystic-dark/30">
+          <h3 className="font-exo text-xl font-medium text-mystic-white mb-4">
+            Индивидуальная консультация
+          </h3>
+          <p className="text-gray-400 mb-6 max-w-2xl mx-auto font-light">
+            Каждая ситуация уникальна. Запишитесь на персональную консультацию 
+            для обсуждения вашего случая и выбора оптимального решения.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="text-center">
+              <div className="text-lg font-medium text-mystic-gold">30 минут</div>
+              <div className="text-sm text-gray-500">Бесплатно</div>
+            </div>
+            <div className="hidden sm:block w-px bg-mystic-gray/20"></div>
+            <div className="text-center">
+              <div className="text-lg font-medium text-mystic-gold">60 минут</div>
+              <div className="text-sm text-gray-500">3 000 ₽</div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
